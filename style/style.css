@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  width: 320px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgb(224, 223, 223);
+  position: sticky;
+  top: 0;
+  padding: 25px 15px;
+  transition: all 0.5s ease;
+}
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.logos img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.logos h2 {
+  font-size: 28px;
+  font-weight: 600;
+  transition: all 0.5s ease;
+  font-family: Poppins;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 7px;
+  background-color: grey;
+  border-radius: 10px;
+}
+.nav_list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  padding: 10px;
+  justify-content: space-between;
+  height: calc(100% - 90px);
+}
+
+.nav_list ul {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  list-style-type: none;
+}
+.nav_list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.lists i{
+  color: #707070;
+  font-size: 28px;
+}
+.lists a{
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  color: #707070;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: Poppins;
+}
+.nav_list_bottom {
+  padding-top: 20px;
+  border-top: 1px solid rgb(224, 223, 223);
+}
+.nav_list_bottom i{
+  color: #707070;
+  font-size: 28px;
+}
+.nav_list_bottom ul{
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  list-style-type: none;
+}
+.nav_list_bottom li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav_list_bottom a{
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  color: #707070;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: Poppins;
+}
+.switch {
+  width: 50px;
+  height: 25px;
+  background-color: #fff;
+  appearance: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 3px;
+  position: relative;
+  transition: 0.3s linear;
+  color: aliceblue;
+  border: 1px solid black;
+}
+.switch::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+.switch:checked::before {
+  margin-left: calc(50px - 30px);
+  background-color: rgb(255, 255, 255);
+}
+
+.switch:checked {
+  background-color: rgb(0, 0, 0);
+  border: 1px solid lightgray;
+}
