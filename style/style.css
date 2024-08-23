@@ -260,3 +260,56 @@ main {
 .dashboard_card:nth-child(3) {
   background-color: #E7D1FC;
 }
+.recents_div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.active{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+.active h2{
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Poppins;
+}
+table{
+  text-align: start;
+  padding-top: 20px;
+}
+.checkbox {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #0E4BF1;
+  appearance: none;
+  padding-top: 3px;
+}
+
+.checkbox::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 10px;
+  border-left: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  transform: rotate(-45deg) scale(0);
+  margin: auto;
+  transition: all 0.2s ease;
+}
+
+.checkbox:checked::after {
+  transform: rotate(-45deg) scale(1);
+}
+th{
+  font-size: 25px;
+  font-weight: 500px;
+  text-align: start;
+}
+td{
+  font-size: 20px;
+  font-weight: 400;
+}
