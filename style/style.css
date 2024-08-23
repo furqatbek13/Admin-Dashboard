@@ -278,7 +278,7 @@ main {
 }
 table{
   text-align: start;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 .checkbox {
   width: 30px;
@@ -308,8 +308,13 @@ th{
   font-size: 25px;
   font-weight: 500px;
   text-align: start;
+  padding-top: 15px;
+}
+tr{
+  padding-top: 30px;
 }
 td{
   font-size: 20px;
   font-weight: 400;
+  padding-top: 7px;
 }
